@@ -434,9 +434,9 @@ App.Pages.Customers = (function () {
     function getFilterHtml(customer) {
         const name = (customer.first_name || '[No First Name]') + ' ' + (customer.last_name || '[No Last Name]');
 
-        let info = customer.email || '[No Email]';
+        let info = customer.email || "";
 
-        info = customer.phone_number ? info + ', ' + customer.phone_number : info;
+        info = customer.phone_number ? info + ' ' + customer.phone_number : info;
 
         return $('<div/>', {
             'class': 'customer-row entry',

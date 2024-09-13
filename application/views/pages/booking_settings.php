@@ -329,7 +329,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" id="require-captcha"
                                                    data-field="require_captcha">
@@ -340,10 +340,10 @@
 
                                         <div class="form-text text-muted">
                                             <small>
-                                                <?= lang('require_captcha_hint') ?>
+                                                <?//= lang('require_captcha_hint') ?>
                                             </small>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="mb-3">
                                         <div class="form-check form-switch">
@@ -377,22 +377,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox"
                                                    id="display-delete-personal-information"
                                                    data-field="display_delete_personal_information">
                                             <label class="form-check-label" for="display-delete-personal-information">
-                                                <?= lang('delete_personal_information') ?>
+                                                <?//= lang('delete_personal_information') ?>
                                             </label>
                                         </div>
 
                                         <div class="form-text text-muted">
                                             <small>
-                                                <?= lang('delete_personal_information_hint') ?>
+                                                <?//= lang('delete_personal_information_hint') ?>
                                             </small>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div>
                                         <div class="form-check form-switch">
