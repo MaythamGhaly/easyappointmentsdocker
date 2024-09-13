@@ -45,7 +45,7 @@ App.Http.Calendar = (function () {
         return $.post(url, data)
             .done((response) => {
                 if (successCallback) {
-                    console.log(response)
+                    // console.log(response)
                     successCallback(response);
                 }
             })
@@ -116,7 +116,7 @@ App.Http.Calendar = (function () {
         return $.post(url, data)
             .done((response) => {
                 if (successCallback) {
-                    console.log(response)
+                    // console.log(response)
                     const csvContent = formatCSV(response.data);
                     downloadCSV(csvContent, 'report.csv');
                     successCallback(response);

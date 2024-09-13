@@ -215,7 +215,7 @@ App.Http.Booking = (function () {
 
                     return false;
                 }
-                console.log(response);
+                // console.log(response);
                 window.location.href = App.Utils.Url.siteUrl('booking_confirmation/of/' + response.appointment_hash);
             })
             .fail(() => {
