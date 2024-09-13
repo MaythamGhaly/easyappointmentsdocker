@@ -297,21 +297,21 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="border rounded mb-3 p-3">
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" id="customer-notifications"
                                                    data-field="customer_notifications">
                                             <label class="form-check-label" for="customer-notifications">
-                                                <?= lang('customer_notifications') ?>
+                                                <?//= lang('customer_notifications') ?>
                                             </label>
                                         </div>
 
                                         <div class="form-text text-muted">
                                             <small>
-                                                <?= lang('customer_notifications_hint') ?>
+                                                <?//= lang('customer_notifications_hint') ?>
                                             </small>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="mb-3">
                                         <div class="form-check form-switch">
