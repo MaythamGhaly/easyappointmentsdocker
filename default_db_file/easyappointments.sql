@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 17, 2024 at 08:28 AM
+-- Generation Time: Sep 17, 2024 at 08:34 AM
 -- Server version: 8.0.39
 -- PHP Version: 8.2.23
 
@@ -354,7 +354,7 @@ INSERT INTO `ea_users` (`id`, `create_datetime`, `update_datetime`, `first_name`
 (14, '2024-09-13 08:37:25', '2024-09-13 08:37:25', 'dr', '3', '', NULL, '123456789', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 2),
 (15, '2024-09-13 08:44:17', '2024-09-13 08:44:17', 'user', '1', '', NULL, '123456789', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 4),
 (16, '2024-09-13 08:54:13', '2024-09-13 08:54:13', 'user', '2', '', NULL, '1231123', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 4),
-(17, '2024-09-13 09:00:51', '2024-09-13 09:00:51', 'admin', '1', '', NULL, '123456', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 1);
+(17, '2024-09-13 09:00:51', '2024-09-17 08:34:43', 'admin', 'admin', '', NULL, '123456', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -393,7 +393,7 @@ INSERT INTO `ea_user_settings` (`id_users`, `username`, `password`, `salt`, `wor
 (14, 'dr3', '44f37f604d0bd3d5a1730d459ec73eb328147fc6fadd029c4e6c60c0ee9c2db1', 'de50e53bb85507037632807e39b3cfd5c5488d5f1b331e49ce6f41ea98cb32fc', '{\"monday\":{\"start\":\"09:00\",\"end\":\"18:00\",\"breaks\":[{\"start\":\"14:30\",\"end\":\"15:00\"}]},\"tuesday\":{\"start\":\"09:00\",\"end\":\"18:00\",\"breaks\":[{\"start\":\"14:30\",\"end\":\"15:00\"}]},\"wednesday\":{\"start\":\"09:00\",\"end\":\"18:00\",\"breaks\":[{\"start\":\"14:30\",\"end\":\"15:00\"}]},\"thursday\":{\"start\":\"09:00\",\"end\":\"18:00\",\"breaks\":[{\"start\":\"14:30\",\"end\":\"15:00\"}]},\"friday\":{\"start\":\"09:00\",\"end\":\"18:00\",\"breaks\":[{\"start\":\"14:30\",\"end\":\"15:00\"}]},\"saturday\":null,\"sunday\":null}', '{}', 1, NULL, NULL, NULL, 0, NULL, NULL, NULL, 30, 90, 'default'),
 (15, 'user1', 'fc81bbfe3aeaeb3209b5a7d4fff9f1d42cec9a2bceb271e7d107ee2525274d2d', '2d1c689865a1564e9a414b504f956eafd973c4bb554f24adabee488b2e45337a', NULL, NULL, 1, NULL, NULL, NULL, 0, NULL, NULL, NULL, 30, 90, 'default'),
 (16, 'user2', '2cf0f79cd6c095accf5f80d723dd1c3e61e659a0f785a1090486d63423fc5420', 'b6a301c5a69447181615a31863747bf898d05c3326321b1916784fd6eeb678d6', NULL, NULL, 1, NULL, NULL, NULL, 0, NULL, NULL, NULL, 30, 90, 'default'),
-(17, 'admin1', 'e317364c4ade3919dfb339b61ad4388c84e7a73dfa9ce64fe073713eadc92ca0', '19274a1f6fc9a2f7bdcaafa97ddac034c9193884fdf8986127f78b42623abbde', NULL, NULL, 1, NULL, NULL, NULL, 0, NULL, NULL, NULL, 30, 90, 'default');
+(17, 'admin', '426825886493ad609734d0d1c6ab18a36e08fd22cf8921298f45dd6290ce4a23', '19274a1f6fc9a2f7bdcaafa97ddac034c9193884fdf8986127f78b42623abbde', NULL, NULL, 1, NULL, NULL, NULL, 0, NULL, NULL, NULL, 30, 90, 'default');
 
 -- --------------------------------------------------------
 
