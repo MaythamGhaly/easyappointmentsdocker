@@ -75,20 +75,20 @@
                             <tbody><!-- Dynamic Content --></tbody>
                         </table>
 
-                        <?php if (can('view', PRIV_BLOCKED_PERIODS)): ?>
-                            <h5 class="text-black-50 mb-3 fw-light"><?= lang('blocked_periods') ?></h5>
+                        <?php //if (can('view', PRIV_BLOCKED_PERIODS)): ?>
+                            <!-- <h5 class="text-black-50 mb-3 fw-light"><?//= lang('blocked_periods') ?></h5>
 
                             <p class="form-text text-muted">
-                                <?= lang('blocked_periods_hint') ?>
+                                <?//= lang('blocked_periods_hint') ?>
                             </p>
 
                             <div class="mb-5">
-                                <a href="<?= site_url('blocked_periods') ?>" class="btn btn-primary">
+                                <a href="<?//= site_url('blocked_periods') ?>" class="btn btn-primary">
                                     <i class="fas fa-cogs me-2"></i>
-                                    <?= lang('configure') ?>
+                                    <?//= lang('configure') ?>
                                 </a>
-                            </div>
-                        <?php endif; ?>
+                            </div> -->
+                        <?php //endif; ?>
 
                         <h5 class="text-black-50 mb-3 fw-light"><?= lang(
                             'allow_rescheduling_cancellation_before',

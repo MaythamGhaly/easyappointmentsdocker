@@ -32,8 +32,8 @@
         ) ?>" class="form-control" required/>
     </div>
 
-    <div class="d-flex justify-content-between align-items-center mb-5">
-        <a href="<?= site_url('recovery') ?>" class="forgot-password"><?= lang('forgot_your_password') ?></a>
+    <div class="d-flex justify-content-end align-items-center mb-5">
+        <!-- <a href="<?= site_url('recovery') ?>" class="forgot-password"><?= lang('forgot_your_password') ?></a> -->
 
         <button type="submit" id="login" class="btn btn-primary" style="background:#bb2121;color:white;border-color:white">
             <i class="fas fa-sign-in-alt me-2"></i>

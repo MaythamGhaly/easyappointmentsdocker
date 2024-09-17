@@ -32,7 +32,7 @@ class Booking_confirmation extends EA_Controller
         $this->load->model('services_model');
         $this->load->model('customers_model');
 
-        $this->load->library('google_sync');
+        // $this->load->library('google_sync');
     }
 
     /**
@@ -54,7 +54,7 @@ class Booking_confirmation extends EA_Controller
 
         $appointment = $occurrences[0];
 
-        $add_to_google_url = $this->google_sync->get_add_to_google_url($appointment['id']);
+        $add_to_google_url = "";//$this->google_sync->get_add_to_google_url($appointment['id']);
 
         html_vars([
             'page_title' => lang('success'),

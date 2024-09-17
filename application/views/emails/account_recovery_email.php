@@ -9,12 +9,12 @@
 ?>
 <html lang="en">
 <head>
-    <title><?= $subject ?> | Easy!Appointments</title>
+    <title><?= $subject ?> Doctors Without Borders</title>
 </head>
 <body style="font: 13px arial, helvetica, tahoma;">
 
 <div class="email-container" style="width: 650px; border: 1px solid #eee; margin: 30px auto;">
-    <div id="header" style="background-color: #429a82; height: 45px; padding: 10px 15px;">
+    <div id="header" style="background-color: white; height: 45px; padding: 10px 15px;border:1px #ed0000">
         <strong id="logo" style="color: white; font-size: 20px; margin-top: 10px; display: inline-block">
             <?= e($settings['company_name']) ?>
         </strong>

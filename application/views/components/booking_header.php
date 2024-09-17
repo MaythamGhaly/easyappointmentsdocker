@@ -6,11 +6,11 @@
  */
 ?>
 
-<div id="header">
+<div id="header" style="background:white !important;  border-style: solid;border-color: #ed0000;">
     <div id="company-name">
-        <img src="<?= vars('company_logo') ?: base_url('assets/img/logo.png') ?>" alt="logo" id="company-logo">
+        <img src="<?= vars('company_logo') ?: base_url('assets/img/doctorslogo.png') ?>" alt="logo" id="company-logo">
 
-        <span>
+        <span style="color:#ed0000 !important">
             <?= e($company_name) ?>
         </span>
 

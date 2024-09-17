@@ -82,7 +82,7 @@
         /* Booking Layout */
 
         #book-appointment-wizard #header {
-            background: <?= $company_color ?>;
+            background: white;
         }
 
         #book-appointment-wizard #company-name .display-selected-service,

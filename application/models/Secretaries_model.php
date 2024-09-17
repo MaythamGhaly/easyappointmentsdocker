@@ -93,8 +93,7 @@ class Secretaries_model extends EA_Model
         // Make sure all required fields are provided.
         if (
             empty($secretary['first_name']) ||
-            empty($secretary['last_name']) ||
-            empty($secretary['phone_number'])
+            empty($secretary['last_name'])
         ) {
             throw new InvalidArgumentException('Not all required fields are provided: ' . print_r($secretary, true));
         }

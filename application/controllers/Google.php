@@ -27,7 +27,7 @@ class Google extends EA_Controller
     {
         parent::__construct();
 
-        $this->load->library('google_sync');
+        // $this->load->library('google_sync');
 
         $this->load->model('appointments_model');
         $this->load->model('providers_model');
@@ -47,7 +47,7 @@ class Google extends EA_Controller
             /** @var EA_Controller $CI */
             $CI = get_instance();
 
-            $CI->load->library('google_sync');
+            // $CI->load->library('google_sync');
 
             // Load the libraries as this method is called statically from the CLI command
 
@@ -71,7 +71,7 @@ class Google extends EA_Controller
             $provider = $CI->providers_model->find($provider_id);
 
             // Check whether the selected provider has the Google Sync enabled.
-            $google_sync = $CI->providers_model->get_setting($provider['id'], 'google_sync');
+            $google_sync = "";//$CI->providers_model->get_setting($provider['id'], 'google_sync');
 
             if (!$google_sync) {
                 return; // The selected provider does not have the Google Sync enabled.
@@ -79,7 +79,7 @@ class Google extends EA_Controller
 
             $google_token = json_decode($provider['settings']['google_token'], true);
 
-            $CI->google_sync->refresh_token($google_token['refresh_token']);
+            // $CI->google_sync->refresh_token($google_token['refresh_token']);
 
             // Fetch provider's appointments that belong to the sync time period.
             $sync_past_days = $provider['settings']['sync_past_days'];
@@ -281,7 +281,7 @@ class Google extends EA_Controller
         session(['oauth_provider_id' => $provider_id]);
 
         // Redirect browser to google user content page.
-        header('Location: ' . $this->google_sync->get_auth_url());
+        // header('Location: ' . $this->google_sync->get_auth_url());
     }
 
     /**
@@ -424,7 +424,7 @@ class Google extends EA_Controller
 
             $this->providers_model->set_setting($provider_id, 'google_token');
 
-            $this->appointments_model->clear_google_sync_ids($provider_id);
+            // $this->appointments_model->clear_google_sync_ids($provider_id);
 
             json_response([
                 'success' => true,

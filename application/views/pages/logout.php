@@ -16,7 +16,7 @@
         <?= lang('backend_section') ?>
     </a>
 
-    <a href="<?= site_url() ?>" class="btn btn-primary btn-large">
+    <a href="<?= site_url() ?>" class="btn btn-primary btn-large" style="background:#ed0000; border:#ed0000">
         <i class="fas fa-calendar-alt me-2"></i>
         <?= lang('book_appointment_title') ?>
     </a>
