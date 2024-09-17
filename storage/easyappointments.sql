@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 17, 2024 at 08:34 AM
+-- Generation Time: Sep 17, 2024 at 09:24 AM
 -- Server version: 8.0.39
 -- PHP Version: 8.2.23
 
@@ -81,23 +81,6 @@ CREATE TABLE `ea_consents` (
   `ip` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `type` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `ea_migrations`
---
-
-CREATE TABLE `ea_migrations` (
-  `version` bigint NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `ea_migrations`
---
-
-INSERT INTO `ea_migrations` (`version`) VALUES
-(59);
 
 -- --------------------------------------------------------
 
