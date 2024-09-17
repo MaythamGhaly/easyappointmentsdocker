@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 17, 2024 at 09:24 AM
+-- Generation Time: Sep 17, 2024 at 09:30 AM
 -- Server version: 8.0.39
 -- PHP Version: 8.2.23
 
@@ -186,7 +186,8 @@ CREATE TABLE `ea_services_providers` (
 
 INSERT INTO `ea_services_providers` (`id_users`, `id_services`) VALUES
 (12, 2),
-(14, 2);
+(14, 2),
+(13, 3);
 
 -- --------------------------------------------------------
 
@@ -333,7 +334,7 @@ CREATE TABLE `ea_users` (
 INSERT INTO `ea_users` (`id`, `create_datetime`, `update_datetime`, `first_name`, `last_name`, `email`, `mobile_number`, `phone_number`, `address`, `city`, `state`, `zip_code`, `notes`, `timezone`, `language`, `custom_field_1`, `custom_field_2`, `custom_field_3`, `custom_field_4`, `custom_field_5`, `is_private`, `ldap_dn`, `id_roles`) VALUES
 (1, '2024-09-11 09:12:14', '2024-09-13 09:05:26', 'maytham', 'ghaly', '', NULL, '71505680', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 1),
 (12, '2024-09-13 08:28:49', '2024-09-13 09:58:57', 'dr', 'dr', '', NULL, '123456789', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 2),
-(13, '2024-09-13 08:31:11', '2024-09-13 08:31:11', 'dr', '2', '', NULL, '123456', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 2),
+(13, '2024-09-13 08:31:11', '2024-09-17 09:28:31', 'dr', '2', '', NULL, '123456', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 2),
 (14, '2024-09-13 08:37:25', '2024-09-13 08:37:25', 'dr', '3', '', NULL, '123456789', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 2),
 (15, '2024-09-13 08:44:17', '2024-09-13 08:44:17', 'user', '1', '', NULL, '123456789', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 4),
 (16, '2024-09-13 08:54:13', '2024-09-13 08:54:13', 'user', '2', '', NULL, '1231123', '', '', '', '', '', 'Asia/Beirut', 'english', NULL, NULL, NULL, NULL, NULL, 0, NULL, 4),
