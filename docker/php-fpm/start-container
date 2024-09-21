@@ -15,5 +15,15 @@ echo "➜ Install NPM Dependencies"
 echo "➜ Build Project Assets"
 [[ -d assets/vendor ]] || npx gulp compile
 
-echo "➜ Listen To Incoming Requests"
+echo "➜ Waiting for MySQL to be ready"
+/usr/local/bin/wait-for-mysql.sh
+
+if [ $? -eq 0 ]; then
+  echo "➜ MySQL is ready. Starting backup."
+  /usr/local/bin/backup.sh
+else
+  echo "➜ MySQL is not ready. Backup skipped."
+fi
+
+echo "➜ Listening to incoming requests"
 php-fpm

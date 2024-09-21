@@ -2,13 +2,15 @@ FROM php:8.3-fpm
 
 WORKDIR "/var/www/html"
 
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        git \
-        zip \
-        unzip \
+    git \
+    zip \
+    unzip \
+    mariadb-client \
     && curl -sSL https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions -o - | sh -s \
-        curl gd intl ldap mbstring mysqli odbc pdo pdo_mysql soap sockets xml zip xdebug exif sqlite3 gettext bcmath csv event imap inotify mcrypt redis \
+    curl gd intl ldap mbstring mysqli odbc pdo pdo_mysql soap sockets xml zip xdebug exif sqlite3 gettext bcmath csv event imap inotify mcrypt redis \
     && docker-php-ext-enable xdebug \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && curl -sLS https://deb.nodesource.com/setup_18.x | bash - \
@@ -26,4 +28,9 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-CMD ["bash", "docker/php-fpm/start-container"]
+
+COPY ./backup.sh /usr/local/bin/backup.sh
+COPY ./wait-for-mysql.sh /usr/local/bin/wait-for-mysql.sh
+RUN chmod +x /usr/local/bin/backup.sh /usr/local/bin/wait-for-mysql.sh
+
+CMD ["/bin/bash", "-c", "/usr/local/bin/backup.sh && docker/php-fpm/start-container"]
